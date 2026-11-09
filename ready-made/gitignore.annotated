@@ -1,0 +1,54 @@
+# ─────────────────────────────────────────────────────────────
+# A .gitignore for writers
+# Annotated version of Chapter 10.3
+#
+# Git ignores every line starting with #, so you can leave the
+# comments in. Delete the patterns you don't need.
+# ─────────────────────────────────────────────────────────────
+
+# Operating system clutter.
+# These appear without your asking and change constantly.
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files.
+# Swap files, workspace settings, and tool-specific folders.
+.vscode/
+.obsidian/
+*.swp
+*~
+
+# Exports.
+# These are outputs, regenerable from the source (Ch. 25).
+# Chapter 10.2 explains why committing them is a mistake.
+*.docx
+*.pdf
+*.epub
+*.mobi
+exports/
+manuscript.md
+
+# Word lock files.
+# The hidden file Word creates while a document is open.
+~$*.docx
+
+# Keep the reference document.
+# The exception to *.docx above — it's a style template, not an export.
+# Chapter 25.6 explains what it is.
+!reference.docx
+
+# Scratch and backups.
+scratch/
+*.bak
+
+# Research material (non-fiction).
+# Working material rather than deliverables — see Chapter 27.1.
+# Uncomment if you keep scans and photographs in the project folder.
+# research/
+
+# Large assets — uncomment if you are NOT using Git LFS.
+# Chapter 27.2 covers LFS; Chapter 10.2 explains why size matters.
+# *.psd
+# *.tif
+# *.tiff
